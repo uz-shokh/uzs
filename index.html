@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Education - Kirish</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>HTML EDUCATION</h2>
 
+    <!-- Login form -->
+    <div id="loginForm" class="form active">
+      <h3>Kirish</h3>
+      <input type="tel" id="loginPhone" placeholder="Telefon raqami (+998901234567)">
+      <input type="password" id="loginPassword" placeholder="Parol">
+      <button id="loginBtn">Kirish</button>
+      <p>Hisobingiz yo‘qmi? <a href="#" id="showSignupLink">Ro‘yxatdan o‘tish</a></p>
+    </div>
+
+    <!-- Signup form -->
+    <div id="signupForm" class="form">
+      <h3>Ro‘yxatdan o‘tish</h3>
+      <input type="text" id="signupName" placeholder="Ism Familiya">
+      <input type="tel" id="signupPhone" placeholder="Telefon raqami (+998901234567)">
+      <input type="password" id="signupPassword" placeholder="Parol">
+      <button id="signupBtn">Ro‘yxatdan o‘tish</button>
+      <p>Hisobingiz bormi? <a href="#" id="showLoginLink">Kirish</a></p>
+    </div>
+
+    <p id="telegramHint" class="muted"></p>
+  </div>
+
+  <!-- Telegram WebApp JS -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
